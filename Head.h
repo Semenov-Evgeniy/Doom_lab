@@ -43,7 +43,7 @@ class Wall {
     Wall() : x(0), y(0), w(0), h(0) {};
     Wall(int x0, int y0, int w0, int h0) : x(x0), y(y0), w(w0), h(h0) {};
     bool is_colis(VertexArray& line) {
-
+        //smth
     }
 };
 
