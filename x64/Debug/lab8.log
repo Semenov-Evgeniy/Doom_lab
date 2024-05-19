@@ -1,0 +1,27 @@
+﻿  lab8.cpp
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Head.h(25,37): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Head.h(25,34): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Head.h(26,40): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(33,16): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(34,15): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(36,48): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(36,38): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(37,82): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(37,41): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  lab8.vcxproj -> C:\Users\Евгений\Desktop\Visualka_projects\lab8\x64\Debug\lab8.exe
