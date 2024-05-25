@@ -3,11 +3,14 @@
 #include "Head.h"
 #include "Classes.h"
 
-
+void initWalls() {
+    Wall a(50, 100, 30, 50);
+    //Walls.push_back(a);
+}
 
 void draw_fig(RenderWindow& window) {
-    Wall a(50, 100, 30, 50);
-    a.draw(window);
+    
+    //a.draw(window);
 }
 
 void draw_ray(RenderWindow& window) {

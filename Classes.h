@@ -39,7 +39,7 @@ double cross(Vec a, Vec b) {
 }
 
 double distance_point(Vec A, Vec B) {
-    return (B.x - A.x) * (B.x - A.x) + (B.y - A.y) * (B.y - A.y);
+    return sqrt((B.x - A.x) * (B.x - A.x) + (B.y - A.y) * (B.y - A.y));
 }
 
 bool are_crossing(Vec v11, Vec v12, Vec v21, Vec v22, Vec &vCross) {
@@ -61,7 +61,7 @@ bool are_crossing(Vec v11, Vec v12, Vec v21, Vec v22, Vec &vCross) {
 class Player {
 public:
     double x = W / 2, y = H / 2;
-    double angle =720.0;
+    double angle =470.0;
     Texture Hero_text;
     Sprite Player_model;
     void draw_player(RenderWindow& window) {

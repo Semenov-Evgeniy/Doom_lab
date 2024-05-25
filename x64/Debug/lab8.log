@@ -128,14 +128,28 @@ C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(34,40): warning C
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(40,88): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(40,89): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(40,58): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(40,59): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(24,43): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(24,34): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(25,46): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(25,39): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(30,57): warning C4244: аргумент: преобразование "double" в "sf::Uint8", возможна потеря данных
+C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(30,47): warning C4244: аргумент: преобразование "double" в "sf::Uint8", возможна потеря данных
   lab8.vcxproj -> C:\Users\Евгений\Desktop\Visualka_projects\lab8\x64\Debug\lab8.exe
