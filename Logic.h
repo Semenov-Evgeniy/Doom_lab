@@ -1,10 +1,7 @@
 #pragma once
 #include "Head.h"
+#include "Classes.h"
 
-double move_speed = 5.0;
-double angle_dif = 10.0;
-const double FOV = 120;
-vector<VertexArray> Rays;
 
 void Keyboard_func(Event& event) {
 	Vector2i pixelPos = Mouse::getPosition(window);
@@ -30,17 +27,22 @@ void Keyboard_func(Event& event) {
 }
 
 void ray_throw() {
-	int rayLength = FOV / 2;
+	int rayLength = FOV;
 	for (int dir = player.angle - rayLength; dir <= player.angle + rayLength; dir += 3){
-			VertexArray line(Lines, 2);
-			line[0].position = Vector2f(player.x, player.y);
-			line[1].position = Vector2f(player.x + 1000 * cos(dir * PI / 180.0), player.y + 1000 * sin(dir * PI / 180.0));
-			line[1].color = Color::Green;
-			line[0].color = Color::Green;
-			Rays.push_back(line);
+		VertexArray line(Lines, 2);
+		line[0].position = Vector2f(player.x, player.y);
+		line[1].position = Vector2f(player.x + depth * cos(dir * PI / 180.0), player.y + depth * sin(dir * PI / 180.0));
+		line[1].color = Color::Green;
+		line[0].color = Color::Green;
+		Wall a(50, 100, 30, 50);
+		Vec newLine;
+		if (a.is_colis(line)) {
+			line[1].position = Vector2f(a.newCoords(line, newLine).x, a.newCoords(line, newLine).y);
+		}
+		Rays.push_back(line);
 	}
 }
 
 void distance_to_wall() {
-
+	
 }
