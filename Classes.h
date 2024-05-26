@@ -60,15 +60,16 @@ bool are_crossing(Vec v11, Vec v12, Vec v21, Vec v22, Vec &vCross) {
 
 class Player {
 public:
-    double x = W / 2, y = H / 2;
-    double angle =470.0;
+    double x = 20, y = 20;
+    double angle =1080.0;
     Texture Hero_text;
-    Sprite Player_model;
+    RectangleShape Player_model;
     void draw_player(RenderWindow& window) {
         //Player_model.setTexture(Hero_text);
-        Player_model.setOrigin(Vector2f(25, 25));
+        Player_model.setFillColor(Color::Red);
+        Player_model.setOrigin(Vector2f(5, 5));
         Player_model.setPosition(x, y);
-        Player_model.setRotation(-angle / 4);
+        Player_model.setSize(Vector2f(10, 10));
         window.draw(Player_model);
     }
     double change_angle() {
@@ -146,4 +147,14 @@ public:
     }
 };
 
+class Enemy {
+public:
+    double w, h, x, y;
+};
+
+struct Pinki : Enemy {
+    double range;
+};
+
 Player player;
+vector<pair<Vec, Vec>> Walls;

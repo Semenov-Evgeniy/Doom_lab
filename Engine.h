@@ -4,13 +4,21 @@
 #include "Classes.h"
 
 void initWalls() {
-    Wall a(50, 100, 30, 50);
-    //Walls.push_back(a);
+    double x, y, w, h;
+    ifstream in("Map/Walls.txt");
+    while (in >> x >> y >> w >> h) {
+        Vec a = { x, y };
+        Vec b = { w, h };
+        Walls.push_back({a, b});
+    }
+    in.close();
 }
 
 void draw_fig(RenderWindow& window) {
-    
-    //a.draw(window);
+    for (int i = 0; i < Walls.size(); i++) {
+        Wall a(Walls[i].first.x, Walls[i].first.y, Walls[i].second.x, Walls[i].second.y);
+        a.draw(window);
+    }
 }
 
 void draw_ray(RenderWindow& window) {
@@ -21,10 +29,6 @@ void draw_ray(RenderWindow& window) {
 }
 
 void startEngine(RenderWindow& window) {
-    Texture Hero_text;
-    Hero_text.loadFromFile("Sprites/Player.png");
-    player.Player_model.setTexture(Hero_text);
-
     draw_fig(window);
     player.draw_player(window);
     ray_throw();

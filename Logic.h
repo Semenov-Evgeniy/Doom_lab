@@ -28,21 +28,20 @@ void Keyboard_func(Event& event) {
 
 void ray_throw() { 
 	int rayLength = FOV;
-	for (int dir = player.angle - rayLength; dir <= player.angle + rayLength; dir += 3){
+	for (int dir = player.angle - rayLength; dir <= player.angle + rayLength; dir += 4){
 		VertexArray line(Lines, 2);
 		line[0].position = Vector2f(player.x, player.y);
 		line[1].position = Vector2f(player.x + depth * cos(dir * PI / 180.0), player.y + depth * sin(dir * PI / 180.0));
 		line[1].color = Color::Green;
 		line[0].color = Color::Green;
-		Wall a(50, 100, 30, 50);
+		for (int ind = 0; ind < Walls.size(); ind++) {
+			Wall a(Walls[ind].first.x, Walls[ind].first.y, Walls[ind].second.x, Walls[ind].second.y);
 			Vec newLine;
 			if (a.is_colis(line)) {
 				line[1].position = Vector2f(a.newCoords(line, newLine).x, a.newCoords(line, newLine).y);
-			}
-			Rays.push_back(line);
-	}
-}
 
-void distance_to_wall() {
-	
+			}
+		}
+		Rays.push_back(line);
+	}
 }
