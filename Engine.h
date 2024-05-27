@@ -3,6 +3,23 @@
 #include "Head.h"
 #include "Classes.h"
 
+void initEnemies() {
+    double x, y, w, h;
+    ifstream in("Map/Enemy.txt");
+    while (in >> x >> y >> w >> h) {
+        Pinky a(x, y, w, h);
+        Pinkies.push_back(a);
+    }
+    in.close();
+}
+
+void drawEnemy() {
+    for (int i = 0; i < Pinkies.size(); i++) {
+        Pinkies[i].engineDraw();
+        Pinkies[i].movement();
+    }
+}
+
 void initWalls() {
     double x, y, w, h;
     ifstream in("Map/Walls.txt");
@@ -14,23 +31,24 @@ void initWalls() {
     in.close();
 }
 
-void draw_fig(RenderWindow& window) {
+void draw_fig() {
     for (int i = 0; i < Walls.size(); i++) {
         Wall a(Walls[i].first.x, Walls[i].first.y, Walls[i].second.x, Walls[i].second.y);
-        a.draw(window);
+        a.draw();
     }
 }
 
-void draw_ray(RenderWindow& window) {
+void draw_ray() {
     for (int i = 0; i < Rays.size(); i++) {
         window.draw(Rays[i]);
     }
     Rays.clear();
 }
 
-void startEngine(RenderWindow& window) {
-    draw_fig(window);
-    player.draw_player(window);
+void startEngine() {
+    draw_fig();
+    player.draw_player();
     ray_throw();
-    draw_ray(window);
+    drawEnemy();
+    draw_ray();
 }

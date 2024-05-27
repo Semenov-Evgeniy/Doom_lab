@@ -1,6 +1,8 @@
 #pragma once
 #include "Head.h"
 
+double times;
+
 struct Vec {
     double x, y;
     Vec() {
@@ -61,10 +63,11 @@ bool are_crossing(Vec v11, Vec v12, Vec v21, Vec v22, Vec &vCross) {
 class Player {
 public:
     double x = 20, y = 20;
+    int HP = 100;
     double angle =1080.0;
     Texture Hero_text;
     RectangleShape Player_model;
-    void draw_player(RenderWindow& window) {
+    void draw_player() {
         //Player_model.setTexture(Hero_text);
         Player_model.setFillColor(Color::Red);
         Player_model.setOrigin(Vector2f(5, 5));
@@ -82,6 +85,7 @@ public:
         return angle;
     }
 };
+Player player;
 
 class Wall {
 private:
@@ -90,6 +94,7 @@ public:
     Color s = Color(128, 255, 255);
     Wall() : x(0), y(0), w(0), h(0) { init(); };
     Wall(double x0, double y0, double w0, double h0) : x(x0), y(y0), w(w0), h(h0) { init(); };
+    ~Wall() {};
     RectangleShape wall;
     vector<VertexArray> segments;
     void init() {
@@ -110,7 +115,7 @@ public:
         line[1].position = Vector2f(x+w, y+h);
         segments.push_back(line);
     }
-    void draw(RenderWindow& window) {
+    void draw() {
         window.draw(wall);
     }
     bool is_colis(VertexArray& line) {
@@ -146,15 +151,83 @@ public:
         return newLine;
     }
 };
-
-class Enemy {
-public:
-    double w, h, x, y;
-};
-
-struct Pinki : Enemy {
-    double range;
-};
-
-Player player;
 vector<pair<Vec, Vec>> Walls;
+
+struct Pinky {
+    double w, h, x, y, eRange = 15, eAngle = 0, HP = 100;
+    bool isSee = true;
+    Pinky(double x1, double y1, double w1, double h1) : x(x1), y(y1), w(w1), h(h1) {};
+    void engineDraw() {
+        RectangleShape enemy;
+        enemy.setPosition(Vector2f(x, y));
+        enemy.setSize(Vector2f(w, h));
+        enemy.setFillColor(Color::Yellow);
+        window.draw(enemy);
+    }
+    void movement() {
+        VertexArray line(Lines, 2);
+        line[0].position = Vector2f(x+w/2,y+h/2);
+        line[1].position = Vector2f(player.x, player.y);
+        line[1].color = Color::Red;
+        line[0].color = Color::Red;
+        //window.draw(line);
+
+        isSee = true;
+        for (int i = 0; i < Walls.size(); i++) {
+            Wall a(Walls[i].first.x, Walls[i].first.y, Walls[i].second.x, Walls[i].second.y);
+            if (a.is_colis(line)) {
+                isSee = false;
+                break;
+            }
+        }
+        if (isSee) {
+            double dY = player.y - y;
+            double dX = player.x - x;
+            eAngle = atan2(dY, dX);
+            if (distance_point(Vec(x+w/2, y+h/2), Vec(player.x, player.y)) > 20) {
+                x += (move_speed - 0.01) * times * cos(eAngle);
+                y += (move_speed - 0.01) * times * sin(eAngle);
+            }
+            else {
+                double currTimeP = PinkyBeatDelay.getElapsedTime().asMilliseconds();
+                if (currTimeP - prevTimeP > 1000) {
+                    player.HP -= 10;
+                    prevTimeP = currTimeP;
+                }
+            }
+        }
+    }
+};
+
+vector<int> PinkyDraw;
+vector<Pinky> Pinkies;
+
+struct Shotgun {
+    Sprite shotgunSpr;
+    void shoot(double angle) {
+        VertexArray line(Lines, 2);
+        line[0].position = Vector2f(player.x, player.y);
+        line[1].position = Vector2f(player.x + depth * cos(angle * PI / 180.0), player.y + depth * sin(angle * PI / 180.0));
+        line[1].color = Color::Red;
+        line[0].color = Color::Red;
+        for (int i = 0; i < Pinkies.size(); i++) {
+            Wall a(Pinkies[i].x, Pinkies[i].y, Pinkies[i].w, Pinkies[i].h);
+            if (a.is_colis(line) && Pinkies[i].isSee) {
+                Pinkies[i].HP -= 50;
+                if (Pinkies[i].HP <= 0) {
+                    Pinkies.erase(Pinkies.begin() + i);
+                }
+                break;
+            }
+        }
+    }
+    void drawWeapon() {
+        shotgunSpr.setScale(0.7, 0.7);
+        shotgunSpr.setOrigin(W / 3.7, 0);
+        shotgunSpr.setTexture(shotgunText);
+        shotgunSpr.setPosition(W / 2, H / 2 + H / 8);
+        window.draw(shotgunSpr);
+    }
+};
+
+Shotgun shotgun;

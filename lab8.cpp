@@ -3,9 +3,10 @@
 
 
 int main(){
-    Clock clock;
     getTextures();
     initWalls();
+    initEnemies();
+    initText();
     draw_all(window);
     return 0;
 }
