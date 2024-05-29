@@ -120,7 +120,7 @@ void drawPinky3D(Pinky &p) {
         pinky.setTextureRect(IntRect(ind2 * 47, 0, 47, 62));
     }
     double diff = proj / distance_point(Vec({ p.x, p.y }), Vec({ player.x, player.y }));
-    pinky.setScale(1.5+diff, 1.5+diff);
+    pinky.setScale(0.5+diff, 0.5+diff);
     pinky.setOrigin(23, 0);
     Vec a = { p.x - player.x, p.y - player.y };
     Vec b = { player.x + 50 * cos(player.angle * PI / 180.0) - player.x, player.y + 50 * sin(player.angle * PI / 180.0) - player.y };

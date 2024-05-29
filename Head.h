@@ -18,8 +18,8 @@ double move_speed = 0.02;
 double angle_dif = 0.5;
 const double FOV = 60;
 const double depth = 600;
-const double proj = 40;
-const double wallHeight = 500;
+const double proj = 50;
+const double wallHeight = 400;
 const double EnemyHeight = 300;
 const double eps = 1e-3;
 const double epsA = 1;
@@ -38,7 +38,6 @@ Texture fireShot;
 Texture PinkyEat;
 Texture endText;
 Texture HealthText;
-
 
 void getTextures() {
 	Hero_text.loadFromFile("Sprites/Player.png");
@@ -84,4 +83,15 @@ void timerUpdate() {
 	}
 }
 Font font;
+
+SoundBuffer shootSnd;
+
+//void getSounds() {
+//	shootSnd.loadFromFile("Sound/shoot.wav");
+//	Sound r;
+//	r.setBuffer(shootSnd);
+//	r.setVolume(50);
+//	r.play();
+//	
+//}
 
