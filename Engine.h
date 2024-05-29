@@ -3,6 +3,22 @@
 #include "Head.h"
 #include "Classes.h"
 
+void initHealths() {
+    double x, y;
+    ifstream in("Map/Healths.txt");
+    while (in >> x >> y) {
+        Health a(x, y);
+        Healths.push_back(a);
+    }
+    in.close();
+}
+
+void drawHealths() {
+    for (int i = 0; i < Healths.size(); i++) {
+        Healths[i].engineDraw();
+    } 
+}
+
 void initEnemies() {
     double x, y, w, h;
     ifstream in("Map/Enemy.txt");
@@ -51,4 +67,6 @@ void startEngine() {
     ray_throw();
     drawEnemy();
     draw_ray();
+    drawHealths();
+    collision();
 }

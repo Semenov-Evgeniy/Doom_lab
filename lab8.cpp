@@ -7,6 +7,7 @@ int main(){
     initWalls();
     initEnemies();
     initText();
+    initHealths();
     draw_all(window);
     return 0;
 }

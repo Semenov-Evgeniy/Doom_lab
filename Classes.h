@@ -40,6 +40,14 @@ double cross(Vec a, Vec b) {
     return a.x * b.y - a.y * b.x;
 }
 
+double dot(Vec a, Vec b) {
+    return a.x * b.x + a.y * b.y;
+}
+
+double modP(Vec a) {
+    return sqrt(a.x * a.x + a.y * a.y);
+}
+
 double distance_point(Vec A, Vec B) {
     return sqrt((B.x - A.x) * (B.x - A.x) + (B.y - A.y) * (B.y - A.y));
 }
@@ -64,7 +72,7 @@ class Player {
 public:
     double x = 20, y = 20;
     int HP = 100;
-    double angle =1080.0;
+    double angle =0.0;
     Texture Hero_text;
     RectangleShape Player_model;
     void draw_player() {
@@ -76,11 +84,11 @@ public:
         window.draw(Player_model);
     }
     double change_angle() {
-        if (angle > 1440) {
-            angle = angle - 1440;
+        if (angle > 360) {
+            angle = angle - 360;
         }
         if (angle < 0) {
-            angle = 1440 + angle;
+            angle = 360 + angle;
         }
         return angle;
     }
@@ -156,6 +164,8 @@ vector<pair<Vec, Vec>> Walls;
 struct Pinky {
     double w, h, x, y, eRange = 15, eAngle = 0, HP = 100;
     bool isSee = true;
+    bool isDraw = true;
+    bool isEat = false;
     Pinky(double x1, double y1, double w1, double h1) : x(x1), y(y1), w(w1), h(h1) {};
     void engineDraw() {
         RectangleShape enemy;
@@ -173,10 +183,12 @@ struct Pinky {
         //window.draw(line);
 
         isSee = true;
+        isDraw = true;
         for (int i = 0; i < Walls.size(); i++) {
             Wall a(Walls[i].first.x, Walls[i].first.y, Walls[i].second.x, Walls[i].second.y);
             if (a.is_colis(line)) {
                 isSee = false;
+                isDraw = false;
                 break;
             }
         }
@@ -184,11 +196,13 @@ struct Pinky {
             double dY = player.y - y;
             double dX = player.x - x;
             eAngle = atan2(dY, dX);
-            if (distance_point(Vec(x+w/2, y+h/2), Vec(player.x, player.y)) > 20) {
-                x += (move_speed - 0.01) * times * cos(eAngle);
-                y += (move_speed - 0.01) * times * sin(eAngle);
+            if (distance_point(Vec(x+w/2, y+h/2), Vec(player.x, player.y)) > 10) {
+                x += (move_speed-0.005) * times * cos(eAngle);
+                y += (move_speed-0.005) * times * sin(eAngle);
+                isEat = false;
             }
             else {
+                isEat = true;
                 double currTimeP = PinkyBeatDelay.getElapsedTime().asMilliseconds();
                 if (currTimeP - prevTimeP > 1000) {
                     player.HP -= 10;
@@ -203,8 +217,10 @@ vector<int> PinkyDraw;
 vector<Pinky> Pinkies;
 
 struct Shotgun {
+    bool isShoot = 0;
     Sprite shotgunSpr;
     void shoot(double angle) {
+        isShoot = 1;
         VertexArray line(Lines, 2);
         line[0].position = Vector2f(player.x, player.y);
         line[1].position = Vector2f(player.x + depth * cos(angle * PI / 180.0), player.y + depth * sin(angle * PI / 180.0));
@@ -222,12 +238,71 @@ struct Shotgun {
         }
     }
     void drawWeapon() {
-        shotgunSpr.setScale(0.7, 0.7);
-        shotgunSpr.setOrigin(W / 3.7, 0);
-        shotgunSpr.setTexture(shotgunText);
-        shotgunSpr.setPosition(W / 2, H / 2 + H / 8);
-        window.draw(shotgunSpr);
+        if (!isShoot) {
+            shotgunSpr.setScale(3, 3);
+            shotgunSpr.setOrigin(165/2, 200);
+            shotgunSpr.setTexture(shotgunText);
+            shotgunSpr.setPosition(W / 2, H + 2);
+            shotgunSpr.setTextureRect(IntRect(0, 0, 150, 200));
+            window.draw(shotgunSpr);
+        }
     }
 };
 
 Shotgun shotgun;
+
+struct theEnd {
+    double x = 290, y = 480;
+    bool isDraw = 1, isGet = 0;
+    void draw() {
+        VertexArray line(Lines, 2);
+        line[0].position = Vector2f(x, y);
+        line[1].position = Vector2f(player.x, player.y);
+        //window.draw(line);
+        isDraw = true;
+        for (int i = 0; i < Walls.size(); i++) {
+            Wall a(Walls[i].first.x, Walls[i].first.y, Walls[i].second.x, Walls[i].second.y);
+            if (a.is_colis(line)) {
+                isDraw = false;
+                break;
+            }
+        }
+    }
+    void check() {
+        if (distance_point(Vec({ player.x, player.y }), Vec({ x, y })) < 10) isGet = 1;
+    }
+};
+
+theEnd Exit;
+
+struct Health {
+    double x, y;
+    Health() {};
+    Health(double x1, double y1) : x(x1), y(y1) {};
+    bool isDraw = 1, isGet = 0;
+    void draw() {
+        VertexArray line(Lines, 2);
+        line[0].position = Vector2f(x, y);
+        line[1].position = Vector2f(player.x, player.y);
+        //window.draw(line);
+        isDraw = true;
+        for (int i = 0; i < Walls.size(); i++) {
+            Wall a(Walls[i].first.x, Walls[i].first.y, Walls[i].second.x, Walls[i].second.y);
+            if (a.is_colis(line)) {
+                isDraw = false;
+                break;
+            }
+        }
+    }
+    void check() {
+        if (distance_point(Vec({ player.x, player.y }), Vec({ x, y })) < 5) isGet = 1;
+    }
+    void engineDraw() {
+        RectangleShape enemy;
+        enemy.setPosition(Vector2f(x, y));
+        enemy.setSize(Vector2f(10, 10));
+        enemy.setFillColor(Color::Red);
+        window.draw(enemy);
+    }
+};
+vector<Health> Healths;
