@@ -1,300 +1,301 @@
 ﻿  lab8.cpp
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(82,37): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(82,34): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(104,57): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(104,64): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(104,71): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(104,78): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(109,38): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(82,37): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(82,34): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(104,57): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(104,64): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(104,71): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(104,78): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(109,38): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(109,35): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(109,35): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(110,34): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(110,34): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(110,31): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(110,31): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(113,40): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(113,40): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(113,37): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(113,37): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(114,44): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(114,44): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(114,39): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(114,39): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(116,44): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(116,44): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(116,39): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(116,39): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(117,46): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(117,46): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(117,39): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(117,39): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(119,40): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(119,40): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(119,37): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(119,37): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(120,42): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(120,42): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(120,37): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(120,37): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(122,42): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(122,42): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(122,37): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(122,37): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(123,43): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(123,43): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(123,38): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(123,38): warning C4244: аргумент: преобразование "int" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(172,39): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(172,39): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(172,36): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(172,36): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(173,35): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(173,35): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(173,32): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(173,32): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(179,44): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(179,44): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(179,38): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(179,38): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(180,53): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(180,53): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(180,43): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(180,43): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(225,53): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(225,53): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(225,43): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(225,43): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(226,90): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(226,90): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(226,46): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(226,46): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(259,40): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(259,40): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(259,37): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(259,37): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(260,53): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(260,53): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(260,43): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(260,43): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(285,40): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(285,40): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(285,37): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(285,37): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(286,53): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(286,53): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(286,43): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(286,43): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(302,39): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(302,39): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Classes.h(302,36): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Classes.h(302,36): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(60,16): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(64,47): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(60,16): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(64,47): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(64,37): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(64,37): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(65,82): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(65,82): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(65,40): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(65,40): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(72,89): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(72,89): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(72,59): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(72,59): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(82,15): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(84,47): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(82,15): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(84,47): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(84,37): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(84,37): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(85,78): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(85,78): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Logic.h(85,40): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Logic.h(85,40): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(15,30): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(15,20): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(29,27): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(38,31): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(38,21): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(52,28): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(123,33): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(123,23): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(137,26): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(193,43): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(193,34): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(196,65): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(15,30): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(15,20): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(29,27): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(38,31): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(38,21): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(52,28): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(123,33): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(123,23): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(137,26): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(193,43): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(193,34): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(196,65): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=int
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(196,54): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(196,54): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=int
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(203,51): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(203,51): warning C4244: аргумент: преобразование "double" в "T", возможна потеря данных
           with
           [
               T=float
           ]
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(204,62): warning C4244: аргумент: преобразование "double" в "sf::Uint8", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(204,51): warning C4244: аргумент: преобразование "double" в "sf::Uint8", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(204,40): warning C4244: аргумент: преобразование "double" в "sf::Uint8", возможна потеря данных
-C:\Users\Евгений\Desktop\Visualka_projects\lab8\Drawing.h(278,59): warning C4244: =: преобразование "sf::Int64" в "double", возможна потеря данных
-  lab8.vcxproj -> C:\Users\Евгений\Desktop\Visualka_projects\lab8\x64\Debug\lab8.exe
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(204,62): warning C4244: аргумент: преобразование "double" в "sf::Uint8", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(204,51): warning C4244: аргумент: преобразование "double" в "sf::Uint8", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(204,40): warning C4244: аргумент: преобразование "double" в "sf::Uint8", возможна потеря данных
+C:\Users\Евгений\Desktop\gitProj\Doom_lab\Drawing.h(278,59): warning C4244: =: преобразование "sf::Int64" в "double", возможна потеря данных
+  LINK : не найден или не выполнена сборка C:\Users\Евгений\Desktop\gitProj\Doom_lab\x64\Debug\lab8.exe при последней инкрементной компоновке; выполняется полная компоновка
+  lab8.vcxproj -> C:\Users\Евгений\Desktop\gitProj\Doom_lab\x64\Debug\lab8.exe
